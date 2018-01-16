@@ -6,7 +6,7 @@ function takeANumber(katzDeliLine, name){
 
 function nowServing(katzDeliLine){
   if(katzDeliLine.length > 0){
-    first = katzDeliLine[0];
+    var first = katzDeliLine[0];
     katzDeliLine.unshift()
     return first
   }else{
