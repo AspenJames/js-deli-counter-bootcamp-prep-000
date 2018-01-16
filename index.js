@@ -1,15 +1,19 @@
 var katzDeliLine = []
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+function takeANumber(line, name){
+  line.push(name);
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
-function nowServing(katzDeliLine){
-  if(katzDeliLine.length > 0){
-    var first = katzDeliLine[0];
-    katzDeliLine.shift()
+function nowServing(line){
+  if(line.length > 0){
+    var first = line[0];
+    line.shift()
     return `Currently serving ${first}.`
   }else{
     return "There is nobody waiting to be served!"
   }
+}
+
+function currentLine(line){
+  
 }
