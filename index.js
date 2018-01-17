@@ -20,7 +20,7 @@ function currentLine(line){
   }else{
     var message = `The line is currently: `
     for(let i=0; i<line.lenth; i++){
-      message += `${i+1}. ${line[i]}, `;
+      message += `${i+1}. ${line[i]}, `
     }
     message += `${line.length}. ${line[line.length-1]}`
     return message
