@@ -22,7 +22,6 @@ function currentLine(line){
     for(let i=0; i<line.lenth; i++){
       countLine.push(`${i+1}. ${line[i]}`)
     }
-    countLine.push(`${line.length}. ${line[line.length-1]}`)
     return `The line is currently: ${countLine}`
   }
 }
