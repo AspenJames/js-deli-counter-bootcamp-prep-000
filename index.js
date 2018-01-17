@@ -23,6 +23,6 @@ function currentLine(line){
       countLine.push(`${i+1}. ${line[i]}`)
     }
     countLine.push(`${line.length}. ${line[line.length-1]}`)
-    return `The line is currently ${countLine}`
+    return `The line is currently: ${countLine}`
   }
 }
