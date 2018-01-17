@@ -19,9 +19,10 @@ function currentLine(line){
     return "The line is currently empty."
   }else{
     var countLine = []
-    for(let i=0; i<line.lenth; i++){
+    for(let i=0; i<line.length; i++){
       countLine.push(`${i+1}. ${line[i]}`)
     }
+    countLine.push(`${line.length}. ${line[line.length-1]}`)
     return `The line is currently: ${countLine}`
   }
 }
