@@ -20,8 +20,8 @@ function currentLine(line){
   }else{
     var countLine = []
     for(let i=0; i<line.length; i++){
-      countLine.push(`${i+1}. ${line[i]} `)
+      countLine.push(` ${i+1}. ${line[i]}`)
     }
-    return `The line is currently: ${countLine}`
+    return `The line is currently:${countLine}`
   }
 }
